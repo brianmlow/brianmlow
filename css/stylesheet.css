@@ -1,0 +1,291 @@
+/* 	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	color: #3F5D77;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+	BML STYLESHEET STARTS HERE
+*/
+html, body {
+	height: 100%;
+	font-size: 12px;
+	line-height: 1em;
+	background-color: #FFF; /* #FFF is shorthand for #FFFFFF */
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+ul {
+	list-style: disc inside none;
+}
+ol {
+	list-style: decimal inside none;
+}
+strong {
+	font-weight: bold;
+	color: #3F5D77;
+}
+/*
+	PAGE WRAPPER
+*/
+.wrapper {
+	margin: 0 0 0 30px;
+	min-height: 92%;
+	overflow: hidden;
+	padding: 32px 0 20px;
+	position: relative;
+	width: 975px;
+}
+.wrapper p.post_nav {
+	border-top: 1px solid #DCDCDC;
+	clear: both;
+	color: #AAA;
+	font-size: 11px;
+	margin: 0 5px 15px 0;
+	padding-top: 7px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 740px;
+	margin-left: 228px;            
+}
+#copyright-year {
+	color: #AAA;
+}
+/*
+	SIDEBAR
+*/
+#sidebar {
+	position: absolute; top: 0;
+	width: 205px;
+	left: 0;
+}
+#sidebar img {
+	margin-bottom: 35px;
+	max-width: 185px;
+}
+#sidebar ul {
+	list-style-type: none;
+	margin-bottom: 22px;
+	zoom: 1;
+}
+#sidebar > ul {
+	padding-bottom: 2px;
+	width: 180px;
+	*position: relative;
+	*right: 16px;
+}
+#sidebar ul a {
+	color: #666;
+	text-decoration: none;
+}
+#sidebar ul a:hover, 
+#sidebar ul a:focus {
+	color: #000;
+	background-color: #F0F8FF; /* AliceBlue */
+}
+#sidebar ul .selected a,
+#sidebar ul .selected {
+	color: #666;
+	background-color: #F0F8FF; /* AliceBlue */
+}
+#sidebar ul .item { 
+	display: block; 
+	width: 100%;
+	line-height: 1.75em;
+}
+#sidebar .category {
+	line-height : 90%;
+	border-top : 1px solid #DCDCDC;
+	color: #000; 
+	cursor: pointer;
+	display: block;
+	padding: 0.6em 0;
+	position: relative;
+	zoom: 1;
+}
+#sidebar .hover {
+	color: #000;
+}
+#sidebar .open_cat,
+#sidebar .list_end_cat {
+	border-bottom: 1px solid #DCDCDC;
+	color: #666;
+}
+#sidebar .category_container {
+	display: none;
+	overflow: hidden;
+}
+#sidebar ul .category_container .item {
+	float: left;
+}
+#sidebar_fixed_container {
+	position: fixed;
+	width: 223px;
+	height: 100%;
+	float: left;
+}
+/*
+	MAIN CONTENT AREA
+*/
+#title {
+	border-bottom: 1px solid #DCDCDC;
+	border-top: 1px solid #DCDCDC;
+	color: #FFFFFF;
+	xxx-font-size: 12px;
+	line-height: 1.5;
+	margin: 0 0 40px 25px;
+	padding: 38px 0;
+}		
+#content {
+	color: #474747;
+	float: right;
+	line-height: 1.5;
+	margin: 0 0 30px 205px;
+	overflow: hidden;
+	padding-right: 5px;
+	width: 765px;
+}
+
+/* Listing page styles (styles are default for gallery and over-written below unless specified '.listing') */
+		
+#content .block_wrapper { 
+	float: left;
+}
+.listing #content .block  {
+	margin: 0 0 30px 25px;
+}
+#content .block {
+	position: relative;
+	margin: 0 0 30px 25px;
+	width: 166px;
+	box-shadow: 0px 1px 4px #CCC;
+	-moz-box-shadow: 0px 1px 4px #CCC;
+	-webkit-box-shadow: 0px 1px 4px #CCC;
+}
+#content .block .block_content {
+	background: #FFF;
+	color: #474747;
+	font-size: 11px;
+	line-height: 1.6;
+	padding: 11px 15px;
+	width: 136px;
+}
+#content .block a {
+	text-decoration: none;
+	font-weight: bold;
+}
+#content .block .image {
+	position: relative;
+}
+#content .block img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+#content .block .arrow {
+	color: #FFF;
+	border-bottom: 12px solid;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	position: absolute;
+	bottom: 0px;
+	right: 17px;
+	width: 0;
+	height: 0;
+}
+#content .block h1, 
+#content .block h2 {
+	color: #3F5D77;
+	font-size: 12px;
+}
+		
+/* Gallery page styles */
+		
+.gallery #content .block { 
+	height: auto; 
+	margin-bottom: 30px; 
+	width: 740px; 
+}
+.gallery #content .block .arrow {
+	right: 67px;
+}
+.gallery #content .block .block_content { 
+	font-size: 11px;
+	height: auto; 
+	width: 710px;
+}
+.gallery #content .vimeo_cont,
+.gallery #content .youtube_cont {
+	height: 415px;
+}
+/*
+	SOCIAL LINKS
+*/
+#social ul {
+	margin-top: 30px;
+	overflow: hidden;
+}
+#social li {
+	display: block;
+	float: left;
+	height: 20px;
+	margin-right: 7px;
+	width: auto;
+}
+#social li a { 
+	display: block;
+	height: 20px;
+	text-indent: -9999px;
+	width: 22px;
+	background: url(socialicons_dark.png) 0 0 no-repeat;
+}
+#social .icon_twitter a {
+	background-position: -44px 0;
+}
+#social .icon_facebook a {
+	background-position: -88px 0;
+}
+#social .icon_linkedin a {
+	background-position: 0 0;
+}
